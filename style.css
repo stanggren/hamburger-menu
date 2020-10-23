@@ -11,6 +11,7 @@ header {
     height: 6rem;
     width: 100%;
     position: fixed;
+    top:0;
     transition: height 1s;
 }
 
@@ -118,6 +119,7 @@ nav h2 {
 }
 
 main{
+    padding: 10rem 2rem 2rem 2rem;
 }
 
 
