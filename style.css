@@ -11,10 +11,12 @@ header {
     height: 6rem;
     width: 100%;
     position: fixed;
+    transition: height 1s;
 }
 
 .hamburger{
     height: 100vh;
+    transition: height 1s;
 }
 
 nav {
@@ -89,6 +91,30 @@ nav h2 {
 .search-bar:hover svg g {
     fill: #ff7c4c;
     
+}
+
+.display-hamburger-content{
+    display: flex!important;
+}
+
+.hamburger-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+}
+
+.hamburger-content a{
+    text-decoration: none;
+    color: #f7f7fa;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hamburger-content a:hover{
+    color: #ff7c4c;
 }
 
 main{
