@@ -1,0 +1,116 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background:#f7f7fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background:#666999;
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+}
+
+.hamburger{
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > * {
+    color: #f7f7fa;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f7f7fa;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover{
+    color: #ff7c4c;
+}
+
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor:pointer;
+    margin-left: 0rem;
+}
+
+.menu-icon:hover span{
+    border: 2px solid #ff7c4c;
+}
+
+.menu-icon span {
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 0.15rem;
+    width: 1.5rem;
+}
+
+nav h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 2rem;
+}
+
+.search-bar{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+}
+
+.search-bar svg{
+    width: 3rem;
+    height: 3rem;
+    cursor:pointer;
+}
+
+.search-bar:hover svg g {
+    fill: #ff7c4c;
+    
+}
+
+main{
+}
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 825px) {
+    .menu-icon {
+        display: flex;
+        margin-left: 2rem;
+    }
+    nav h2 {
+        margin-left: 0;
+    }
+
+    .nav-links {
+        width: 18rem;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+}
